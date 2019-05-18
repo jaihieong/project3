@@ -1,33 +1,32 @@
-const mongoose = require ("mongoose");
+const mongoose = require('mongoose');
 
-// Save a reference to the Schema constructor
-var Schema = mongoose.Schema;
+const UserSchema = new mongoose.Schema({
 
-// Using the Schema constructor, create a new UserSchema object
-const UserSchema = new Schema({
     name: {
         type: String,
-        required: true
+        require: true
     },
+    
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
+    
     password: {
         type: String,
         required: true
     },
+
     avatar: {
         type: String
     },
+
     date: {
         type: Date,
         default: Date.now
     }
 });
 
-// This creates our model from the above schema, using mongoose's model method
-var User = mongoose.model("User", UserSchema);
 
-
-module.exports = User;
+module.exports = User = mongoose.model('user', UserSchema);

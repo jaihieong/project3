@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCurrentProfile } from '../../actions/profile';
+import DashboardActions from "./DashboardActions";
 
 const Dashboard = ({ 
   getCurrentProfile, 
   auth: { user }, 
-  profile 
+  profile: { profile }
 }) => {
   useEffect(() => {
     getCurrentProfile();
@@ -20,7 +21,9 @@ const Dashboard = ({
         <i className='fas fa-user' /> Welcome {user && user.name}  
       </p>
       {profile !== null ? (
-        <div>has</div>
+        <div>
+          <DashboardActions />
+        </div>
       ) : (
         <div>
           <p>You no profile</p>

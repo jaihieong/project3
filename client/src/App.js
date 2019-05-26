@@ -13,6 +13,7 @@ import AddEducation from "./components/profile-forms/AddEducation";
 
 import PrivateRoute from "./components/routing/PrivateRoute";
 
+
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";

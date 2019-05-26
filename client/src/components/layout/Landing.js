@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+//import Anime from 'react-anime';
+
+
 
 const Landing = ({ isAuthenticated }) => {
   if(isAuthenticated) {
@@ -11,8 +14,9 @@ const Landing = ({ isAuthenticated }) => {
   return (
     <section className="landing">
       <div className="dark-overlay">
-        <div className="landing-inner">
-          <h1 className="x-large">Developer Connector</h1>
+       <div className="landing-inner">
+        <div className = "jumbotron">
+          <h1 className="x-large jumbotron">Developer Connector</h1>
           <p className="lead">
             Create a developer profile/portfolio, share posts and get help from
             other developers
@@ -21,6 +25,7 @@ const Landing = ({ isAuthenticated }) => {
             <Link to="/register" className="btn btn-primary">Sign Up</Link>
             <Link to="/login" className="btn btn-light">Login</Link>
           </div>
+        </div>
         </div>
       </div>
     </section>

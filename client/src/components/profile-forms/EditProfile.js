@@ -28,22 +28,22 @@ const EditProfile = ({
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
   useEffect(() => {
-      getCurrentProfile();
+    getCurrentProfile();
 
-      // this code will bring us the filled fields from existing profile
-      setFormData({
-          company: loading || !profile.company ? "" : profile.company,
-          website: loading || !profile.website ? "" : profile.website,
-          location: loading || !profile.location ? "" : profile.location,
-          status: loading || !profile.status ? "" : profile.status,
-          skills: loading || !profile.skills ? "" : profile.skills,
-          bio: loading || !profile.bio ? "" : profile.bio,
-          twitter: loading || !profile.social ? "" : profile.social.twitter,
-          facebook: loading || !profile.social ? "" : profile.social.facebook,
-          linkedIn: loading || !profile.social ? "" : profile.social.linkedIn,
-          youtube: loading || !profile.social ? "" : profile.social.youtube,
-          instagram: loading || !profile.social ? "" : profile.social.instagram,
-      });
+    // this code will bring us the filled fields from existing profile
+    setFormData({
+      company: loading || !profile.company ? "" : profile.company,
+      website: loading || !profile.website ? "" : profile.website,
+      location: loading || !profile.location ? "" : profile.location,
+      status: loading || !profile.status ? "" : profile.status,
+      skills: loading || !profile.skills ? "" : profile.skills.join(","),
+      bio: loading || !profile.bio ? "" : profile.bio,
+      twitter: loading || !profile.social ? "" : profile.social.twitter,
+      facebook: loading || !profile.social ? "" : profile.social.facebook,
+      linkedIn: loading || !profile.social ? "" : profile.social.linkedIn,
+      youtube: loading || !profile.social ? "" : profile.social.youtube,
+      instagram: loading || !profile.social ? "" : profile.social.instagram
+    });
   }, [loading]);
 
   const {

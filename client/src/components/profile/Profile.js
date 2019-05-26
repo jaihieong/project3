@@ -8,7 +8,6 @@ import ProfileAbout from "./ProfileAbout";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEducation from "./ProfileEducation";
 
-
 const Profile = ({
   getProfileById,
   profile: { profile, loading },
@@ -35,7 +34,7 @@ const Profile = ({
                 Edit Profile
               </Link>
             )}
-          <div class="profile-grid my-1">
+          <div className="profile-grid my-1">
             <ProfileTop profile={profile} />
             <ProfileAbout profile={profile} />
             <div className="profile-exp bg-white p-2">
@@ -57,18 +56,14 @@ const Profile = ({
               <h2 className="text-primary">Education</h2>
               {profile.education.length > 0 ? (
                 <div>
-                  {profile.education.map(education => (
-                    <ProfileEducation
-                      key={education._id}
-                      education={education}
-                    />
+                  {profile.education.map(edu => (
+                    <ProfileEducation key={edu._id} education={edu} />
                   ))}
                 </div>
               ) : (
                 <h4>No education info</h4>
               )}
             </div>
-
           </div>
         </div>
       )}

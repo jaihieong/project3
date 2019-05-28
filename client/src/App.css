@@ -613,3 +613,25 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
+
+
+.font-small{
+
+  background-color:  #33393e;
+  padding: 10px;
+  
+}
+
+.mb-5{
+float: left;
+
+}
+.mb-6{
+  float: right;
+  color: white;
+}
+
+.footer .href{
+background-color: white;
+
+}

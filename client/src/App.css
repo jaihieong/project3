@@ -14,15 +14,26 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  /* background-color: #fff; */
-  color: #333;
+  background-color: #222831;
+  color: #eeeeee;
+
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  /* text-shadow: 1px 1px 2px #d65a31; */
+  color: #eeeeee;
 }
 
 a {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   text-decoration: none;
 }
 
@@ -42,6 +53,7 @@ img {
   padding: 0 2rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 /* Text Styles*/
@@ -67,11 +79,11 @@ img {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .text-dark {
-  color: var(--dark-color);
+  /* color: var(--dark-color); */
 }
 
 /* Padding */
@@ -160,7 +172,8 @@ img {
 .bg-primary,
 .badge-primary,
 .alert-primary {
-  background: var(--primary-color);
+  background: #d65a31;
+  border-radius: 5px;
   color: #fff;
 }
 
@@ -169,6 +182,7 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
+  border-radius: 5px;
   color: #333;
 }
 
@@ -177,6 +191,7 @@ img {
 .badge-dark,
 .alert-dark {
   background: var(--dark-color);
+  border-radius: 5px;
   color: #fff;
 }
 
@@ -185,6 +200,7 @@ img {
 .badge-danger,
 .alert-danger {
   background: var(--danger-color);
+  border-radius: 5px;
   color: #fff;
 }
 
@@ -201,6 +217,7 @@ img {
 .badge-white,
 .alert-white {
   background: #fff;
+  border-radius: 5px;
   color: #333;
   border: #ccc solid 1px;
 }
@@ -308,8 +325,18 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px #d65a31;
   opacity: 0.9;
+
+   
+}
+
+.navbar {
+  font-family: 'Varela Round', sans-serif;
+  /* background: url('./img/logo.jpg') no-repeat center left; */
+  /* background-size: 50px; */
+  opacity: 0.2px;
+
 }
 
 .navbar ul {
@@ -318,12 +345,12 @@ button {
 
 .navbar a {
   color: #fff;
-  padding: 0.45rem;
+  padding: 1.45rem;
   margin: 0 0.25rem;
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  color: #d65a31;
 }
 
 .navbar .welcome span {
@@ -332,12 +359,21 @@ button {
 
 /* Landing Page */
 
-.landing {
+.jumbotron{
+  background-color:rgb(238, 113, 30);
+  padding: 5px;
+  color: #fff;
+  /* background-color: #aaa; */
+  opacity: .7;
+  border-radius: 10px;
+ 
+}
 
+.landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background: url('./img/apple-black-and-white-camera-6482.jpg') no-repeat center center/cover;
   height: 100vh;
-} */
+}
 
 .landing-inner {
   color: #fff;

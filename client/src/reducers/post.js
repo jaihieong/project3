@@ -9,7 +9,7 @@ import {
 } from "../actions/types";
 
 const initialState = {
-  post: [],
+  posts: [],
   post: null,
   loading: true,
   error: {}
@@ -60,7 +60,7 @@ export default function(state = initialState, action) {
         ...state,
         post: {
           ...state.post,
-          comments: state.post.comment.filter(
+          comments: state.post.comments.filter(
             comment => comment._id !== payload
           ),
           loading: false

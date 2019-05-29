@@ -1,6 +1,6 @@
 # HOOKs
 
-![Hooks Picture is not available](client\src\img\readme.jpg)
+![A Sample Hooks Picture](./client/src/img/readme.jpg)
 
 This application is to connect and hook newly bootcamp graduates to connect and be visible to employers. This application also gives full access to employers to search their candidate of choice.
 ## Getting Started

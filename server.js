@@ -17,9 +17,4 @@ app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-    "mongodb://heroku_f2dc1gr7:75aYUR99_R6g2rlp4q1p6uwuOVE69ZuA@ds155278.mlab.com:55278/heroku_f2dc1gr7"
-);
-
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

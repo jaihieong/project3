@@ -37,7 +37,7 @@ const PostItem = ({
                 type="button"
                 className="btn btn-danger"
               >
-                <i className="fas fa-times" />
+                <i className="fas fa-times" /> Delete post
               </button>
             )}
           </div>

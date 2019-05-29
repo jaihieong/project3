@@ -1,12 +1,18 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn, MDBIcon} from "mdbreact";
+import {
+  MDBCol,
+  MDBContainer,
+  MDBRow,
+  MDBFooter,
+  MDBBtn,
+  MDBIcon
+} from "mdbreact";
 
 const FooterPage = () => {
   return (
     <MDBFooter color="cyan" className="font-small darken-3 pt-10">
-      
-      
       <div className="footer-copyright text-center py-5">
+
 
               <div className="footer">
                 <div className="mb-5 flex-left col-4 ">
@@ -23,15 +29,13 @@ const FooterPage = () => {
                 </MDBBtn>
                        
                 </div>
-              
-
+           
           &copy; {new Date().getFullYear()} Copyright:{" PARS"}
           <p>PARS</p>
-      
-      </div>
+        </div>
       </div>
     </MDBFooter>
   );
-}
+};
 
 export default FooterPage;

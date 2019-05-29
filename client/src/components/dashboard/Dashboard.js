@@ -36,7 +36,10 @@ const Dashboard = ({
         </div>
       ) : (
         <div>
-          <p>You no profile</p>
+          <p>
+            Your profile has not been set up yet. Click the button below to set
+            one up!
+          </p>
           <Link to="/create-profile" className="btn btn-primary my-1">
             Create Profile
           </Link>

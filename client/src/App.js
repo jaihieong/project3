@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/FooterJai";
 import FooterPage from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Login from "./components/auth/Login";
@@ -41,7 +42,7 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          
+
           <Route exact path="/" component={Landing} />
           <section className="container">
             <Alert />
@@ -79,7 +80,7 @@ const App = () => {
           </section>
         </Fragment>
       </Router>
-      <FooterPage/>
+      <FooterPage />
     </Provider>
   );
 };

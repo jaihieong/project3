@@ -46,11 +46,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   return (
     <nav className="navbar bg-dark">
+      <div className="animated infinite bounce slower">
       <h1>
         <Link to="/">
-          <i className='fas fa-h-square' /> Hooks 
+         <i className='fas fa-h-square' /> Hooks 
         </Link>
       </h1>
+      </div>
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}

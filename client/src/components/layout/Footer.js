@@ -20,7 +20,6 @@ const FooterPage = () => {
                 <div className="mb-6 center col-4 ">
                 <MDBBtn size="lg" tag="a" floating social="email" color="primary" href="https://www.gmail.com">
                 <MDBIcon icon="envelope" />
-                <a href="#!" className="email-ic mr-5"></a>
                 </MDBBtn>
                        
                 </div>

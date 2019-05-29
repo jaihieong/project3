@@ -149,6 +149,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  
 }
 
 .badge {
@@ -604,6 +605,7 @@ button {
     display: block;
     width: 100%;
     margin-bottom: 0.2rem;
+    
   }
 
   .post {
@@ -649,4 +651,15 @@ background-color: white;
 .footer-copyright .a{
 
   color: white;
+}
+
+.btn-primary {
+	border: 2px solid #D24D57;
+}
+.btn:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }

@@ -2,8 +2,8 @@
 :root {
   --primary-color: #17a2b8;
   --dark-color: #343a40;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
+  --light-color: #eeeeee;
+  --danger-color: #d65a31;
   --success-color: #28a745;
 }
 
@@ -32,6 +32,7 @@ h2 {
 }
 
 a {
+  color: #d65a31;
   /* color: var(--primary-color); */
   text-decoration: none;
 }
@@ -78,7 +79,7 @@ img {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .text-dark {

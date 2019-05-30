@@ -5,7 +5,7 @@
 This application is to connect and hook newly bootcamp graduates to connect and be visible to employers. This application also gives full access to employers to search their candidate of choice.
 ## Getting Started
 
-You will need to clone or download this file. This project can be found live on www.PARS-heruko.com.
+You will need to clone or download this file. 
 
 ### Prerequisites
 
@@ -31,7 +31,7 @@ c:\hooks\npm install
 
 ## Deployment
 
-This project has been deployed in Heroku and can be found live on www.PARS-Heroku.com
+This project has been deployed in Heroku and can be found live on https://desolate-everglades-60476.herokuapp.com/
 
 ## Built With
 
